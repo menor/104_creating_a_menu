@@ -1,3 +1,113 @@
-@import '../css/normalize.css'
 @import 'vendor/bourbon/bourbon';
+@import 'grid-settings';
 @import 'vendor/neat/neat';
+
+body {
+    font-family: 'Helvetica Neue', Verdana, sans-serif;
+    font-size: em(16);
+}
+.container {
+    @include outer-container
+}
+
+.intro-header {}
+   
+.menu {
+       
+    
+}
+
+.pizzas, .pasta, .drinks {
+    @include row;
+}
+
+
+.pizzas article, .pasta article, .drinks article {
+    @include span-columns(4);
+    @include omega(3n)
+}
+
+.food-name {
+    @include span-columns(3 of 4);
+}
+
+.price {
+    @include span-columns(1 of 4);
+    @include omega;
+    }
+
+.description {
+    @include span-columns(4);
+    @include fill-parent;
+}
+
+
+.menu-header {
+    font-size: em(48);
+    /* font-family: 'Trochut', serif; */
+    text-align: center;
+}
+
+article h1 {
+    
+    font-size: em(18);
+    
+}
+
+article h2 {
+    
+    font-size: em(16);
+}
+
+.description {
+    margin-top: 0px;
+    font-style: italic;
+    
+}
+
+h2 {
+    font-size: em(24);
+}
+
+h3 {
+    font-size: em(18)
+}
+
+article {
+    
+}
+
+.price {
+    text-align: right;
+}
+
+.logo {
+    margin: em(40) 0 0 0;
+}
+
+.slogan {
+    margin-top: 0;
+    font-style: italic;
+    font-size: em(12);
+}
+
+.about {
+    @include row;
+}
+.about img {
+    @include span-columns(4)
+}
+
+.about p{
+    @include span-columns(8);
+    @include omega;
+    line-height: em(32);
+}
+
+footer {
+    @include row;
+    text-align: center;
+    margin: em(80) auto em(20);
+    padding-top: em(10);
+    border-top: 2px solid black;
+}

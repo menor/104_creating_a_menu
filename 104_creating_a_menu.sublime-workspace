@@ -4,8 +4,16 @@
 		"selected_items":
 		[
 			[
+				"s",
+				"span-columns"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
 				"te",
-				"text-transform"
+				"text-align"
 			],
 			[
 				"marg",
@@ -506,14 +514,6 @@
 			[
 				"fir",
 				"first_name"
-			],
-			[
-				"fi",
-				"first_name"
-			],
-			[
-				"my",
-				"myFieldset"
 			]
 		]
 	},
@@ -652,12 +652,21 @@
 	},
 	"file_history":
 	[
+		"/Users/menor/Code/bootcamp/phase_0/104_creating_a_menu/index.html",
+		"/Users/menor/Code/bootcamp/phase_0/104_creating_a_menu/sass/styles.scss",
+		"/Users/menor/Code/bootcamp/phase_0/104_creating_a_menu/sass/_grid-settings.scss",
+		"/Users/menor/Code/bootcamp/phase_0/104_creating_a_menu/sass/vendor/neat/settings/_grid.scss",
+		"/Users/menor/Code/bootcamp/phase_0/104_creating_a_menu/.gitignore",
+		"/Users/menor/Code/bootcamp/phase_0/dev.josemenor.com/sftp-config.json",
+		"/Users/menor/.guardfile",
+		"/Users/menor/Code/bootcamp/phase_0/104_creating_a_menu/Guardfile",
+		"/Users/menor/Code/bootcamp/phase_0/smells_like_bakin/Guardfile",
+		"/Users/menor/Code/bootcamp/phase_0/dev.josemenor.com/Guardfile",
+		"/Users/menor/Code/bootcamp/website_template/README.md",
 		"/Users/menor/Code/bootcamp/phase_0/dev.josemenor.com/index.html",
 		"/Users/menor/Code/bootcamp/phase_0/106_realigning_a_navbar.html",
 		"/Users/menor/Code/bootcamp/phase_0/dev.josemenor.com/css/style.css",
 		"/Users/menor/Code/bootcamp/phase_0/dev.josemenor.com/css/grid.css",
-		"/Users/menor/Code/bootcamp/phase_0/dev.josemenor.com/sftp-config.json",
-		"/Users/menor/Code/bootcamp/phase_0/104_creating_a_menu/.gitignore",
 		"/Users/menor/Code/bootcamp/phase_0/dev.josemenor.com/.gitignore",
 		"/Users/menor/Code/bootcamp/phase_0/dev.josemenor.com/.git/config",
 		"/Users/menor/Code/bootcamp/phase_0/smells_like_bakin/index.html",
@@ -667,7 +676,6 @@
 		"/Users/menor/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/Users/menor/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
 		"/Users/menor/Code/bootcamp/phase_0/smells_like_bakin/sftp-config.bak",
-		"/Users/menor/Code/bootcamp/phase_0/smells_like_bakin/Guardfile",
 		"/Users/menor/Code/bootcamp/phase_0/web/index.html",
 		"/Users/menor/Code/bootcamp/phase_0/web/Guardfile",
 		"/Users/menor/.gemrc",
@@ -771,15 +779,7 @@
 		"/Users/menor/code/bootcamp/phase_0/commented_refactoring_cipher_challenge.rb",
 		"/Users/menor/code/bootcamp/phase_0/refactoring_cipher_challenge.rb",
 		"/etc/shells",
-		"/Users/menor/code/bootcamp/phase_0/finished/38_Regular_Expressions.rb",
-		"/Users/menor/code/bootcamp/phase_0/33_Fibonacci_using_recursion.rb",
-		"/Users/menor/code/bootcamp/phase_0/finished/33_Fibonacci_number.rb",
-		"/Users/menor/code/bootcamp/phase_0/cipher.rb",
-		"/Users/menor/code/bootcamp/phase_0/46_Die_Class_1_Numeric.rb",
-		"/Users/menor/code/bootcamp/phase_0/Die Class 1.rb",
-		"/Users/menor/code/bootcamp/phase_0/Die.rb",
-		"/Users/menor/code/bootcamp/phase_0/33_Fibonacci_number.rb",
-		"/Users/menor/code/bootcamp/phase_0/34_Separate_Numbers_with_Commas.rb"
+		"/Users/menor/code/bootcamp/phase_0/finished/38_Regular_Expressions.rb"
 	],
 	"find":
 	{
@@ -797,6 +797,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"h1",
+			"h2",
 			")}\"\n",
 			"- write*",
 			"actions_array",
