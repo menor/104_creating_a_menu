@@ -2,25 +2,43 @@
 @import 'grid-settings';
 @import 'vendor/neat/neat';
 
-body {
-    font-family: 'Helvetica Neue', Verdana, sans-serif;
-    font-size: em(16);
-}
+$black: #270700;
+$white: #fff2d1;
+$maincolor: #cd0004;
+$secondcolor: #0b580d;
+
+/* -------------------------
+          LAYOUT
+------------------------- */
 .container {
     @include outer-container
 }
 
-.intro-header {}
-   
-.menu {
-       
-    
+.logo {
+    margin: em(40) 0 0 0;
+}
+
+.slogan {
+    margin-top: 0;
+}
+
+.about {
+    @include row;
+}
+
+.about img {
+    @include span-columns(4)
+}
+
+.about p{
+    @include span-columns(8);
+    @include omega;
+    margin-top: em(80);
 }
 
 .pizzas, .pasta, .drinks {
     @include row;
 }
-
 
 .pizzas article, .pasta article, .drinks article {
     @include span-columns(4);
@@ -39,30 +57,26 @@ body {
 .description {
     @include span-columns(4);
     @include fill-parent;
+    margin-top: 0px;
 }
 
-
-.menu-header {
-    font-size: em(48);
-    /* font-family: 'Trochut', serif; */
-    text-align: center;
+footer {
+    @include row;
+    margin: em(80) auto em(20);
+    padding-top: em(10);
+    border-top: 2px solid black;
 }
 
-article h1 {
-    
-    font-size: em(18);
-    
-}
-
-article h2 {
-    
+/* -------------------------
+        TYPOGRAPHY
+------------------------- */
+body {
+    font-family: 'Helvetica Neue', Verdana, sans-serif;
     font-size: em(16);
 }
 
-.description {
-    margin-top: 0px;
-    font-style: italic;
-    
+h1 {
+    font-size: em(32);
 }
 
 h2 {
@@ -73,41 +87,84 @@ h3 {
     font-size: em(18)
 }
 
-article {
-    
+.about p {
+    line-height: em(32);
+    text-align: justify;
 }
 
+.menu-header {
+    font-size: em(48); 
+    /*font-family: 'Trochut', serif;*/
+    text-align: center;
+}
+
+article h1 {
+    font-size: em(18);
+}
+
+article h2 {
+    font-size: em(18);
+}
+
+article {
+    padding: em(10);
+    margin-bottom: em(15);
+}
+
+.description {
+    font-style: italic;
+    line-height: 1.3em;
+    }
+
 .price {
+     
     text-align: right;
 }
 
-.logo {
-    margin: em(40) 0 0 0;
-}
 
 .slogan {
-    margin-top: 0;
     font-style: italic;
     font-size: em(12);
 }
 
-.about {
-    @include row;
-}
-.about img {
-    @include span-columns(4)
-}
-
-.about p{
-    @include span-columns(8);
-    @include omega;
-    line-height: em(32);
+.speciality-header {
+    padding-left: em(10);
 }
 
 footer {
-    @include row;
     text-align: center;
-    margin: em(80) auto em(20);
-    padding-top: em(10);
-    border-top: 2px solid black;
+}
+
+/* -------------------------
+        DECORATION
+------------------------- */
+body {
+    background: $white;
+    color: $black;
+}
+
+.menu-header {
+    background: $maincolor;
+    color: $white;
+}
+
+.food-name {
+   border-bottom: 1px solid tint($black, 40);
+}
+
+article{
+    background: shade($white, 10);
+}
+
+.description {
+    color: tint($black, 40);
+}
+
+.speciality-header {
+    background: $secondcolor;
+    color: $white;
+}
+
+.price {
+    color: tint($black, 20);
 }
