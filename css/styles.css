@@ -44,9 +44,10 @@
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 65.88078%;
+  width: 48.82117%;
+  margin-left: 8.5298%;
   margin-right: 0;
-  margin-top: 5em; }
+  margin-top: 3.75em; }
   .about p:last-child {
     margin-right: 0; }
 
@@ -70,6 +71,12 @@
     margin-right: 0; }
   .pizzas article:nth-child(3n+1), .pasta article:nth-child(3n+1), .drinks article:nth-child(3n+1) {
     clear: left; }
+
+.pizzas article, .pasta article {
+  height: 11.875em; }
+
+.drinks article {
+  height: 6.25em; }
 
 .food-name {
   float: left;
@@ -103,7 +110,7 @@ footer {
   display: block;
   margin: 5em auto 1.25em;
   padding-top: 0.625em;
-  border-top: 2px solid black; }
+  border-top: 2px solid #7d6a66; }
   footer:before, footer:after {
     content: " ";
     display: table; }
@@ -126,6 +133,10 @@ h2 {
 h3 {
   font-size: 1.125em; }
 
+.slogan {
+  font-style: italic;
+  font-size: 0.75em; }
+
 .about p {
   line-height: 2em;
   text-align: justify; }
@@ -134,6 +145,9 @@ h3 {
   font-size: 3em;
   /*font-family: 'Trochut', serif;*/
   text-align: center; }
+
+.speciality-header {
+  padding-left: 0.625em; }
 
 article h1 {
   font-size: 1.125em; }
@@ -145,19 +159,12 @@ article {
   padding: 0.625em;
   margin-bottom: 0.9375em; }
 
-.description {
-  font-style: italic;
-  line-height: 1.3em; }
-
 .price {
   text-align: right; }
 
-.slogan {
+.description {
   font-style: italic;
-  font-size: 0.75em; }
-
-.speciality-header {
-  padding-left: 0.625em; }
+  line-height: 1.3em; }
 
 footer {
   text-align: center; }
@@ -166,25 +173,34 @@ footer {
         DECORATION
 ------------------------- */
 body {
-  background: #fff2d1;
+  background: #ffe9ae;
   color: #270700; }
 
 .menu-header {
-  background: #cd0004;
-  color: #fff2d1; }
+  background: #3c2c0a;
+  color: #eeeeee; }
+
+.speciality-header {
+  background: #c06605;
+  color: #eeeeee; }
+
+.pasta header {
+  background: #3c2c0a; }
+
+article {
+  background: #f2dda5; }
+
+main article:nth-child(2n+2) {
+  background: #d8c693; }
 
 .food-name {
   border-bottom: 1px solid #7d6a66; }
 
-article {
-  background: #e5d9bc; }
+.price {
+  color: #523833; }
 
 .description {
   color: #7d6a66; }
 
-.speciality-header {
-  background: #0b580d;
-  color: #fff2d1; }
-
-.price {
-  color: #523833; }
+footer {
+  color: #7d6a66; }

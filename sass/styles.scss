@@ -3,9 +3,10 @@
 @import 'vendor/neat/neat';
 
 $black: #270700;
-$white: #fff2d1;
-$maincolor: #cd0004;
-$secondcolor: #0b580d;
+$white: #EEE;
+$back-color: #ffe9ae;
+$maincolor: #c06605;
+$secondcolor: #3c2c0a;
 
 /* -------------------------
           LAYOUT
@@ -31,9 +32,10 @@ $secondcolor: #0b580d;
 }
 
 .about p{
-    @include span-columns(8);
+    @include span-columns(6);
+    @include shift(1);
     @include omega;
-    margin-top: em(80);
+    margin-top: em(60);
 }
 
 .pizzas, .pasta, .drinks {
@@ -42,7 +44,15 @@ $secondcolor: #0b580d;
 
 .pizzas article, .pasta article, .drinks article {
     @include span-columns(4);
-    @include omega(3n)
+    @include omega(3n);    
+}
+
+.pizzas article, .pasta article {
+    height: em(190);
+}
+
+.drinks article {
+    height: em(100);
 }
 
 .food-name {
@@ -64,7 +74,7 @@ footer {
     @include row;
     margin: em(80) auto em(20);
     padding-top: em(10);
-    border-top: 2px solid black;
+    border-top: 2px solid tint($black, 40);
 }
 
 /* -------------------------
@@ -87,6 +97,11 @@ h3 {
     font-size: em(18)
 }
 
+.slogan {
+    font-style: italic;
+    font-size: em(12);
+}
+
 .about p {
     line-height: em(32);
     text-align: justify;
@@ -96,6 +111,10 @@ h3 {
     font-size: em(48); 
     /*font-family: 'Trochut', serif;*/
     text-align: center;
+}
+
+.speciality-header {
+    padding-left: em(10);
 }
 
 article h1 {
@@ -111,25 +130,14 @@ article {
     margin-bottom: em(15);
 }
 
+.price {
+  text-align: right;
+}
+
 .description {
     font-style: italic;
     line-height: 1.3em;
     }
-
-.price {
-     
-    text-align: right;
-}
-
-
-.slogan {
-    font-style: italic;
-    font-size: em(12);
-}
-
-.speciality-header {
-    padding-left: em(10);
-}
 
 footer {
     text-align: center;
@@ -139,32 +147,44 @@ footer {
         DECORATION
 ------------------------- */
 body {
-    background: $white;
+    background: $back-color;
     color: $black;
 }
 
 .menu-header {
+    background: $secondcolor;
+    color: $white;
+}
+
+.speciality-header {
     background: $maincolor;
     color: $white;
+}
+
+.pasta header {
+    background: $secondcolor;
+}
+article {
+    background: shade($back-color, 5);
+}
+
+main article:nth-child(2n+2) {
+    background: shade($back-color, 15);
 }
 
 .food-name {
    border-bottom: 1px solid tint($black, 40);
 }
 
-article{
-    background: shade($white, 10);
+.price {
+    color: tint($black, 20);
 }
 
 .description {
     color: tint($black, 40);
 }
 
-.speciality-header {
-    background: $secondcolor;
-    color: $white;
+footer {
+    color: tint($black, 40);
 }
 
-.price {
-    color: tint($black, 20);
-}
